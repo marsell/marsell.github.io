@@ -1,3 +1,10 @@
-## Test page
+## Blog entries
 
-This is a test page. There are many others like it, but this one is mine. &c &c
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
